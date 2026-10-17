@@ -23,7 +23,7 @@ test7 = 'a@gmail.com'
 
 tests = [test01, test02, test03, test1, test2, test3, test4, test5, test6, test7]
 
-pattern = r"^\w+(?:\.\w+)*@([a-zA-Z]+\.[a-zA-Z]+)$"
+pattern = r"^\w+(?:\.\w+)*@([a-z]+\.[a-z]+)$"
 
 for text in tests:
     result = re.findall(pattern, text)
